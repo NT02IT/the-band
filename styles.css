@@ -112,7 +112,7 @@ html{
     width: 100%;
     margin-top: 2.8rem;
     padding-top: 50%;
-    background-image: url(/assets/imgs/la.jpg.png);
+    background-image: url("/assets/imgs/la.jpg.png");
     background-position: center;
     background-size: cover;
 }

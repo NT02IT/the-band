@@ -1,18 +1,18 @@
 @font-face {
-  font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?nvpit9');
-  src:  url('fonts/icomoon.eot?nvpit9#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?nvpit9') format('truetype'),
-    url('fonts/icomoon.woff?nvpit9') format('woff'),
-    url('fonts/icomoon.svg?nvpit9#icomoon') format('svg');
+  font-family: 'the-band-icon';
+  src:  url('fonts/the-band-icon.eot?4zrwpm');
+  src:  url('fonts/the-band-icon.eot?4zrwpm#iefix') format('embedded-opentype'),
+    url('fonts/the-band-icon.ttf?4zrwpm') format('truetype'),
+    url('fonts/the-band-icon.woff?4zrwpm') format('woff'),
+    url('fonts/the-band-icon.svg?4zrwpm#the-band-icon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="tb-"], [class*=" tb-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: 'the-band-icon' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -25,20 +25,58 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-mail:before {
-  content: "\e903";
+.tb-burger:before {
+  content: "\e911";
 }
-.icon-phone:before {
-  content: "\e904";
-}
-.icon-arrow:before {
+.tb-arrow-drop-down:before {
   content: "\e900";
-  color: #fff;
 }
-.icon-location:before {
+.tb-cancel:before {
   content: "\e901";
 }
-.icon-search:before {
+.tb-check:before {
   content: "\e902";
-  color: #fff;
+}
+.tb-facebook:before {
+  content: "\e903";
+}
+.tb-favicon-theband:before {
+  content: "\e904";
+  color: #009866;
+}
+.tb-location:before {
+  content: "\e905";
+}
+.tb-phone:before {
+  content: "\e906";
+}
+.tb-search:before {
+  content: "\e907";
+}
+.tb-social-email:before {
+  content: "\e908";
+}
+.tb-social-instagram:before {
+  content: "\e909";
+}
+.tb-social-linkedin:before {
+  content: "\e90a";
+}
+.tb-social-pinterest:before {
+  content: "\e90b";
+}
+.tb-social-snapchat:before {
+  content: "\e90c";
+}
+.tb-social-twitter:before {
+  content: "\e90d";
+}
+.tb-social-youtube:before {
+  content: "\e90e";
+}
+.tb-ticket:before {
+  content: "\e90f";
+}
+.tb-user:before {
+  content: "\e910";
 }

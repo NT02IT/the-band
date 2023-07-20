@@ -2,145 +2,270 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=100%, initial-scale=1.0">
-    <title>The Band</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The band</title>
+    <link rel="icon" type="image/x-icon" href="assets\icons\svg\favicon-theband.svg">
+    <link rel="stylesheet" href="assets\styles\main.css">
     <link rel="stylesheet" href="assets\icons\style.css">
 </head>
 <body>
-    <div id="main">
-        <div id="header">
-            <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
-                <li>
-                    <a href="">
-                        More
-                        <i class="icon-arrow"></i>
-                    </a>
-                    <ul>
-                        <li class="subnav"><a href="">Merchandise</a></li>
-                        <li class="subnav"><a href="">Extras</a></li>
-                        <li class="subnav"><a href="">Media</a></li>
+    <header>
+        <nav>
+            <ul class="left-block">
+                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#the-band">Band</a></li>
+                <li class="nav-item"><a href="#tour-dates">Tour</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+                <li class="nav-item">
+                    <a href="#">More</a>
+                    <i class="tb-arrow-drop-down"></i>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-item"><a href="#">Merchandise</a></li>
+                        <li class="dropdown-item"><a href="#">Extras</a></li>
+                        <li class="dropdown-item"><a href="#">Media</a></li>
                     </ul>
                 </li>
             </ul>
-            <div class="search-btn">
-                <i class="icon-search"></i>
+            <div class="burger-btn">
+                <i id="js-nav-burger-btn" class="tb-burger"></i>
+                <ul id="js-nav-burger-content" class="burger-nav">
+                    <li class="nav-item"><a href="#">Home</a></li>
+                    <li class="nav-item"><a href="#the-band">Band</a></li>
+                    <li class="nav-item"><a href="#tour-dates">Tour</a></li>
+                    <li class="nav-item"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="right-block">
+                <div class="search-btn">
+                    <i class="tb-search"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="content">
+        <div id="head-slider">
+            <div class="container">
+                <h3>Los Angeles</h3>
+                <p>We had the best time playing at Venice Beach!</p>
             </div>
         </div>
 
-        <div id="slider">
-            <div class="content">
-                <div class="title">Los Angeles</div>
-                <div class="subtile">We had the best time playing at Venice Beach!</div>
-            </div>
-        </div>
-
-        <div id="content">
-            <div class="content-section">
-                <h2 class="section-heading">The band</h2>
-                <p class="sub-heading">We love music</p>
-                <p class="about">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <div class="profile-row">
-                    <div class="item">
-                        <h6>Anh Tuấn</h6>
-                        <img src="assets\imgs\bandmember.jpg.png" alt="">
+        <section id="the-band">
+            <div class="container">
+                <h2 class="title">The band</h2>
+                <p class="subtitle">We love music</p>
+                <p class="body-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="artists row">
+                    <div class="artist-info col-third">
+                        <p>Sơn Tùng M-TP</p>
+                        <img src="assets\imgs\son_tung.jpg" alt="Sơn Tùng M-TP">
                     </div>
-                    <div class="item">
-                        <h6>Duy Bảo</h6>
-                        <img src="assets\imgs\bandmember.jpg.png" alt="">
+                    <div class="artist-info col-third">
+                        <p>Karik</p>
+                        <img src="assets\imgs\karik.jpg" alt="Karik">
                     </div>
-                    <div class="item">
-                        <h6>Đức Toàn</h6>
-                        <img src="assets\imgs\bandmember.jpg.png" alt="">
+                    <div class="artist-info col-third">
+                        <p>Đen</p>
+                        <img src="assets\imgs\den_vau.jpg" alt="Đen">
                     </div>
                 </div>
             </div>
 
-            <div class="content-container">
-                <div class="content-section">
-                    <h2 class="section-heading">Tour dates</h2>
-                    <p class="sub-heading">Remember to book your tickets!</p>
-                    <ul>
-                        <li class="month">September<span>Sold out</span></li>
-                        <li class="month">October<span>Sold out</span></li>
-                        <li class="month number">November<span>3</span></li>
-                    </ul>
-                    <div class="tickets-list">
-                        <div class="ticket">
-                            <img src="assets\imgs\newyork.jpg.png" alt="">
-                            <div class="infor-container">
-                                <p><strong>New York</strong></p>
-                                <p class="day">Fri 27 Nov 2016</p>
-                                <p class="content">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button>Buy Tickets</button>
-                            </div>                            
-                        </div>
+        </section>
 
-                        <div class="ticket">
-                            <img src="assets\imgs\paris.jpg.png" alt="">
-                            <div class="infor-container">
-                                <p><strong>Paris</strong></p>
-                                <p class="day">Sat 28 Nov 2016</p>
-                                <p class="content">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button>Buy Tickets</button>
-                            </div>                            
+        <section class="black-bg" id="tour-dates">
+            <div class="container">
+                <h2 class="title white-text">Tour dates</h2>
+                <p class="subtitle">Remember to book your tickets</p>
+                <ul class="months">
+                    <li class="month">
+                        <p>September</p><p class="soldout-label">Sold out</p>
+                    </li>
+                    <li class="month">
+                        <p>October</p><p class="soldout-label">Sold out</p>
+                    </li>
+                    <li class="month">
+                        <p>November</p><p class="space-num-label">3</p>
+                    </li>
+                </ul>
+                <ul class="place-cards row">
+                    <li class="card col-third">
+                        <img src="assets\imgs\newyork.jpg" alt="Newyork">
+                        <div class="card-body">
+                            <p class="place-name">Newyork</p>
+                            <p class="day">Fri 27 Nov 2016</p>
+                            <p class="details">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button id="js-btn-buy-ticket">Buy ticket</button>
                         </div>
-
-                        <div class="ticket">
-                            <img src="assets\imgs\sanfran.jpg.png" alt="">
-                            <div class="infor-container">
-                                <p><strong>San Francisco</strong></p>
-                                <p class="day">Sun 29 Nov 2016</p>
-                                <p class="content">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <button>Buy Tickets</button>
-                            </div>                            
+                    </li>
+                    <li class="card col-third">
+                        <img src="assets\imgs\paris.jpg" alt="Paris">
+                        <div class="card-body">
+                            <p class="place-name">Paris</p>
+                            <p class="day">Sat 28 Nov 2016</p>
+                            <p class="details">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button id="js-btn-buy-ticket">Buy ticket</button>
                         </div>
-                        
-                    </div>
-                </div>
+                    </li>
+                    <li class="card col-third">
+                        <img src="assets\imgs\sanfran.jpg" alt="San Francisco">
+                        <div class="card-body">
+                            <p class="place-name">San Francisco</p>
+                            <p class="day">Sun 29 Nov 2016</p>
+                            <p class="details">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button id="js-btn-buy-ticket">Buy ticket</button>
+                        </div>
+                    </li>
+                </ul>
             </div>
+        </section>
 
-            <div class="content-section">
-                <h2 class="section-heading">Contact</h2>
-                <p class="sub-heading">Fan? Drop a note!</p>
-                <div class="form-container">
-                    <div class="contact">
-                        <div class="line">
-                            <i class="icon-location"></i>
-                            <span class="txt">Chicago, US</span>
+        <section id="contact">
+            <div class="container">
+                <h2 class="title">Contact</h2>
+                <p class="subtitle">Fan? Drop a note!</p>
+                <div class="contact-block row">
+                    <div class="info col-haft">
+                        <div class="info-item">
+                            <i class="tb-location"></i>
+                            <label for="">Hà Nội, Việt Nam</label>
                         </div>
-                        <div class="line">
-                            <i class="icon-phone"></i>
-                            <span class="txt">Phone: +00 151515</span>
+                        <div class="info-item">
+                            <i class="tb-phone"></i>
+                            <label for="">Phone: +84 327 531 105</label>
                         </div>
-                        <div class="line">
-                            <i class="icon-mail"></i>
-                            <span class="txt"> Email: mail@mail.com</span>
-                        </div>                        
+                        <div class="info-item">
+                            <i class="tb-social-email"></i>
+                            <label for="">Email: lowtee.vn@mail.com</label>
+                        </div>
                     </div>
-                    <form>
-                        <div class="row-1">
-                            <input type="text" name="name" placeholder="Name">
-                            <input type="text" name="email" placeholder="Email">
+                    <form action="">
+                        <div class="row 1">
+                            <input type="text" placeholder="Name" required  class="col-haft">
+                            <input type="email" placeholder="Email" required  class="col-haft">
                         </div>
-                            
-                        <div class="row-2">
-                            <input type="text" name="message" placeholder="Message">
-                            <input type="submit" name="send-btn" value="Send">
+                        <div class="row 2">
+                            <input type="text" placeholder="Message" required  class="col-full">
+                        </div>
+                        <div class="row 3">
+                            <button>Submit</button>
                         </div>
                     </form>
                 </div>
             </div>
-            
-        </div>
+        </section>
 
-        <div id="footer">
-            <p>Powered by w3.css</p>
+        <div id="map">
+            <img src="assets\imgs\map.jpg" alt="">
         </div>
     </div>
+
+    <div id="js-tickets-modal" class="modal-popup">
+        <div class="container">
+            <i id="js-modal-cancel" class="tb-cancel"></i>
+            <div class="model-header">
+                <i class="tb-ticket"></i>
+                <h2>Tickets</h2>
+            </div>
+            <div class="model-body">
+                <form action="">
+                    <label for="tickets-quantity">
+                        <i class="tb-ticket"></i>
+                        <p>Tickets, $15 per person</p>
+                    </label>
+                    <input type="number" id="tickets-quantity" required class="quantity" placeholder="Quantity">
+                    <label for="tickets-email">
+                        <i class="tb-user"></i>
+                        <p>Send To</p>
+                    </label>
+                    <input type="email" id="tickets-email" required class="email" placeholder="abc@gmail.com">
+                    <label for=""><p style="text-align: right; width: 100%; padding-right: 0.2rem;">Thành tiền: <strong id="tickets-price">0$</strong></p></label>
+                    <button id="js-order-btn">Order now</button>
+                </form>
+            </div>
+            <div class="model-footer">
+                <p>Need <a href="#">helps?</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/NT02.IT/" class="tb-facebook"></a>
+            <a href="https://www.instagram.com/nt02.it/" class="tb-social-instagram"></a>
+            <a href="https://www.youtube.com/channel/UCpN2FBJfvvCLFbEOyMU2AYQ" class="tb-social-youtube"></a>
+            <a href="https://twitter.com/AgonDrake" class="tb-social-twitter"></a>
+            <a href="https://www.pinterest.com/agon_drake/" class="tb-social-pinterest"></a>
+            <a href="https://www.linkedin.com/in/tee-low/" class="tb-social-linkedin"></a>
+        </div>
+        <div class="copyright">
+            <p>Powered by <a href="https://www.facebook.com/NT02.IT">Low Tee</a></p>
+        </div>
+    </footer>
 </body>
 </html>
+
+<script>
+    const navBurgerBtn = document.querySelector('#js-nav-burger-btn'); 
+    const navBurgerContent = document.querySelector('#js-nav-burger-content'); 
+    const navItems = document.querySelectorAll('.nav-item');
+
+    const buyBtns = document.querySelectorAll('#js-btn-buy-ticket')
+    const modal = document.getElementById("js-tickets-modal")
+    const cancelBtn = document.getElementById("js-modal-cancel")
+    const orderBtn = document.getElementById("js-order-btn")
+    var ticketsPrice = document.getElementById("tickets-price")
+    var ticketsQuantity = document.getElementById("tickets-quantity");
+    var ticketsEmail = document.getElementById("tickets-email");
+
+    var price;
+    // ticketsQuantity.addEventListener("input", (e) => {
+    //     const quantity = e.target.value;
+    //     price = quantity * 15;
+    //     ticketsPrice.innerHTML = `${price}$`;
+    // });    
+    function calPrice(){
+        const quantity = ticketsQuantity.value;
+        price = quantity * 15;
+        ticketsPrice.innerHTML = `${price}$`;
+    }
+    ticketsQuantity.addEventListener("input", calPrice);
+
+    function showBuyTickets(){
+        modal.classList.add('show')
+    }
+    for(const buyBtn of buyBtns){
+        buyBtn.addEventListener('click', showBuyTickets)
+    }
+
+    function hideBuyTickets(){
+        modal.classList.remove('show')
+    }
+    cancelBtn.addEventListener('click', hideBuyTickets)
+
+    function showDialogBuyTickets(){
+        if (ticketsEmail.value.trim() !== "" && ticketsQuantity.value.trim() !== "") {
+            alert('Bạn đã mua thành công ' + ticketsQuantity.value + ' vé với email là: ' + ticketsEmail.value)
+        } 
+    }
+    orderBtn.addEventListener('click', showDialogBuyTickets)
+
+    function showBurgerMenu(){
+        if(navBurgerContent.classList.contains('show')) {
+            navBurgerContent.classList.remove('show');
+        }
+        else{
+            navBurgerContent.classList.add('show');
+        } 
+    }
+    navBurgerBtn.addEventListener('click', showBurgerMenu)
+
+    for(const navItem of navItems){
+        navItem.addEventListener('click', showBurgerMenu);
+    }
+
+
+
+</script>
